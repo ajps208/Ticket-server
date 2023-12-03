@@ -40,8 +40,8 @@ exports.paymentDone = async (req, res) => {
             ],
             mode: 'payment',
             
-            success_url: `http://localhost:3000/success?ticket=${encodeURIComponent(JSON.stringify(ticket))}&payment_id={CHECKOUT_SESSION_ID}&seatno=${seat}&noOfTickets=${noOfTickets}&userId=${userId}&ticketprice=${ticketprice}&date=${encodeURIComponent(formattedDate)}`,
-            cancel_url: `http://localhost:3000/cancel`,
+            success_url: `https://ticket-book-ajith.vercel.app/success?ticket=${encodeURIComponent(JSON.stringify(ticket))}&payment_id={CHECKOUT_SESSION_ID}&seatno=${seat}&noOfTickets=${noOfTickets}&userId=${userId}&ticketprice=${ticketprice}&date=${encodeURIComponent(formattedDate)}`,
+            cancel_url: `https://ticket-book-ajith.vercel.app/cancel`,
         });
 
         console.log("session", session.id);
