@@ -6,7 +6,11 @@ require('./DB/connection')
 
 const tkServer=express()
 
-tkServer.use(cors())
+tkServer.use(cors({
+    origin: 'https://ticket-book-ajith.vercel.app', // Replace with your actual frontend origin
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+  }));
 tkServer.use(express.json())
 tkServer.use(router)
 tkServer.use('/uploads',express.static('./uploads'))
