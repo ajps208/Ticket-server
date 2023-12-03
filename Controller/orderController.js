@@ -81,6 +81,7 @@ const transporter = nodemailer.createTransport({
   });
   
  exports.sendEmail = async (req,res) => {
+    console.log(email);
     console.log("inside the mail");
   
       const {to,subject, html } = req.body;

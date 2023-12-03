@@ -47,12 +47,12 @@ exports.login=async(req,res)=>{
 }
 
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: email,
-      pass: pass,
-    },
-  });
+  service: 'gmail',
+  auth: {
+    user:"gcthostelgcthostel789@gmail.com",
+    pass: "aivpikwikxkgqmyh"
+  },
+});
   
  exports.sendOtp = async (req,res) => {
     console.log("inside the otp mail");
