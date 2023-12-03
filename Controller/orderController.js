@@ -75,8 +75,8 @@ exports.addOrder=async(req,res)=>{
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user:email,
-      pass: pass,
+      user:"gcthostelgcthostel789@gmail.com",
+      pass: "aivpikwikxkgqmyh"
     },
   });
   
