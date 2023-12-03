@@ -44,6 +44,10 @@ const eventSchema = new mongoose.Schema({
     image: {
         type: String,
         required: false
+    },
+    qty: {
+        type: [Number],
+        required: false
     }
 });
 

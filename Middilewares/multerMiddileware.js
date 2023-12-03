@@ -1,5 +1,7 @@
 const multer=require('multer')
 
+
+
 const storage=multer.diskStorage({
     destination:(req,file,callback)=>{
         callback(null,'./uploads')
@@ -11,6 +13,8 @@ const storage=multer.diskStorage({
 })
 
 const fileFilter=(req,file,callback)=>{
+    console.log("inside the multer")
+
     if(file.mimetype==='image/png' || file.mimetype==='image/jpg' || file.mimetype==='image/jpeg'){
         callback(null,true)
     }else{
