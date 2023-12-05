@@ -7,7 +7,7 @@ require('./DB/connection')
 const tkServer=express()
 
 tkServer.use(cors({
-    origin: 'https://ticket-book-ajith.vercel.app', // Replace with your actual frontend origin
+    origin: 'https://ticket-book-ajith.vercel.app', 
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   }));

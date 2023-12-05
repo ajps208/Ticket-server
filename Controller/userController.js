@@ -60,7 +60,7 @@ const transporter = nodemailer.createTransport({
       const {to,subject, html } = req.body;
      
     const mailOptions = {
-      from: 'strangedr653@gmail.com',
+      from: 'gcthostelgcthostel789@gmail.com',
       to,
       subject,
       html,

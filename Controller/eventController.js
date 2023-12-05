@@ -52,7 +52,7 @@ exports.getSportsEvents = async (req, res) => {
     const searchKey = req.query.search;
     const query = {
         event: "sports",  // Filter by event type
-        category: { $regex: searchKey, $options: "i" }  // Filter by category using regex for case-insensitive search
+        category: { $regex: searchKey, $options: "i" } 
     };
 
     try {
